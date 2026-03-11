@@ -2,7 +2,7 @@ import discord
 from discord.ext import tasks, commands
 from datetime import datetime
 
-TOKEN = "MTQ4MTE3MzM2ODQyMDk2MjM1NA.Gxfks3.oJuLnZodSXWM_zfnKBeV6elYtk4H3RhR5QhnGc"
+TOKEN = "MTQ4MTE3MzM2ODQyMDk2MjM1NA.GnaIis.XyNWDe4hxqIdvRTHyVENEFqteZKlDSGRnSCkFw"
 CHANNEL_ID = 1479700883444076596
 
 intents = discord.Intents.default()
@@ -64,5 +64,6 @@ async def superlevel():
     if now.weekday() in [5,6] and now.hour == 0 and now.minute == 0:
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send("⭐ Evento Super Level activo!")
+
 
 bot.run(TOKEN)
